@@ -76,7 +76,7 @@ def main(input_file, output_file, n=2):
     #
     # Este código es identico al anteior
     #
-    df = load_data(input_file)
+    df = load_data(input_file) 
     df = create_key(df, n)
     df = generate_cleaned_column(df)
     df.to_csv("test.csv", index=False)
